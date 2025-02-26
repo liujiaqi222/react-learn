@@ -1,5 +1,5 @@
 import { produce } from "immer";
-import { Reducer, useReducer } from "react";
+import {useReducer } from "react";
 
 
 type Data = {
@@ -25,7 +25,7 @@ function reducer(state: Data, action: Action) {
 }
 
 function App() {
-  const [state,dispatch]  = useReducer<Reducer<Data,Action>>(reducer,{result:0});
+  const [state,dispatch]  = useReducer(reducer,{result:0});
   return (
     <div>
       <h1>{state.result}</h1>
