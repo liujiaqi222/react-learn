@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from 'react'
+import  { ChangeEvent, useState } from 'react'
 
 
 export const UnControlledMode = () => {
@@ -16,7 +16,7 @@ export const ControlledMode = () => {
 
 
 
-const index = () => {
+const App = () => {
   return (
     <div>
       <div>
@@ -31,4 +31,4 @@ const index = () => {
 
 
 
-export default index
+export default App;
