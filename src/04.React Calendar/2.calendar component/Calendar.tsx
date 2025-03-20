@@ -18,7 +18,7 @@ export type CalendarProps = {
   onChange?: (date: Dayjs) => void;
 };
 
-const Calendar = (props: CalendarProps) => {
+export const Calendar = (props: CalendarProps) => {
   const { value, style, className, locale: propLocale = navigator.language, onChange } = props;
   const locale = propLocale === "zh-CN" || propLocale === "en-US" ? propLocale : "en-US";
   const [curValue, setCurValue] = useState<Dayjs>(value);
