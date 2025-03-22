@@ -1,11 +1,11 @@
-import { useState } from "react"
+import { useCounter } from "./hooks/useCounter"
 
 const Counter = () => {
-  const [count,setCount] = useState(0)
+  const {count,increment }  = useCounter()
   return (
     <div>
       <p data-testid='counter-value'>{count}</p>
-      <button onClick={()=>setCount(pre=>pre+1)}>increment</button>
+      <button onClick={increment}>increment</button>
     </div>
   )
 }
