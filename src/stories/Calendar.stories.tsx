@@ -4,7 +4,7 @@ import { Calendar,  } from "../04.React Calendar/2.calendar component/Calendar";
 import dayjs from "dayjs";
 
 const meta = {
-  title: "日历组件",
+  title: "component/Calendar",
   component: Calendar,
   parameters: {
     layout: "centered",
