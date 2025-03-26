@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    "use strict";
+
+    // 创建一个包含滚动条的 div
+    let div = document.createElement('div');
+
+    div.style.overflowY = 'scroll';
+    div.style.width = '50px';
+    div.style.height = '50px';
+    div.style.backgroundColor='red'
+
+    // 必须将其放入文档（document）中，否则其大小将为 0
+    document.body.append(div);
+    let scrollWidth = div.offsetWidth - div.clientWidth;
+
+    // div.remove();
+
+    alert(scrollWidth);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+  <div id="elem" style="overflow-y:scroll;width:300px;height:200px;border:1px solid black">
+    text text text text text text text text text text text text text text text text text text text text text text text
+    text text text text text text text text text text text text text text text text text text text
+    text text text text text text text text text text text text text text text text text text text text text text text
+    text text text text text text text text text text text text text text text text text text text
+    text text text text text text text text text text text text text text text text text text text text text text text
+    text text text
+  </div>
+
+  The element has <code>style="width:300px"</code>
+  <br>
+
+  <button onclick="alert( elem.offsetWidth )">alert( elem.offsetWidth )</button>
+  <button onclick="alert( elem.clientWidth )">alert( elem.clientWidth )</button>
+    <button onclick="alert( elem.scrollWidth )">alert( elem.scrollWidth )</button>
+  <button onclick="alert( getComputedStyle(elem).width )">alert( getComputedStyle(elem) )</button>
+</body>
+
+</html>
